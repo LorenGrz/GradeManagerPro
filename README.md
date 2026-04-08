@@ -1,5 +1,4 @@
-<img width="1029" height="726" alt="image" src="https://github.com/user-attachments/assets/a9fa17bc-a7cb-404f-9360-8209cb849c6e" /><h1 align="center">📘 GradeManagerPro</h1>
-
+<h1 align="center">📘 GradeManagerPro</h1>
 <p align="center">
   Gestor de notas para estudiantes de medicina desarrollado con <b>React + Vite</b>
 </p>
@@ -109,6 +108,8 @@ src/
 </p>
 
 <h2>SCREENSHOTS</h2>
+<img width="1029" height="726" alt="image" src="https://github.com/user-attachments/assets/a9fa17bc-a7cb-404f-9360-8209cb849c6e" />
+
 <img width="1029" height="726" alt="image" src="https://github.com/user-attachments/assets/c1e2d8fe-6c6a-45a9-872e-b13ca6ebe6b9" />
 <img width="849" height="688" alt="image" src="https://github.com/user-attachments/assets/7696c1a4-7e15-4739-a1fa-ac18f39e634f" />
 
