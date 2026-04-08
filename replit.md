@@ -16,6 +16,37 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - **API codegen**: Orval (from OpenAPI spec)
 - **Build**: esbuild (CJS bundle)
 
+## Artifacts
+
+### notas-medicina (React + Vite, previewPath: /)
+App web para seguimiento de materias y finales de medicina.
+- Todo en memoria local (localStorage), sin backend
+- Materias con múltiples finales por materia
+- Promedio calculado considerando todos los finales (incluyendo desaprobados)
+- Fuente de nota: Sistema, WhatsApp, LU
+- Estado por materia: Aprobada, Regular, Pendiente
+- Modo oscuro con persistencia
+- Filtros por estado y fuente
+- Busqueda por nombre de materia
+
+### Estructura de archivos
+
+```
+artifacts/notas-medicina/src/
+  types/index.ts        — Tipos: Materia, Final, FuenteNota, EstadoMateria
+  store/useStore.ts     — Hook principal con lógica de negocio y localStorage
+  hooks/useDarkMode.ts  — Toggle de modo oscuro
+  pages/Home.tsx        — Página principal
+  components/
+    MateriaCard.tsx     — Tarjeta expandible por materia
+    FinalRow.tsx        — Fila de final (editable inline)
+    ModalAgregarMateria.tsx
+    ModalAgregarFinal.tsx
+    ModalEditarMateria.tsx
+    Estadisticas.tsx    — Resumen: aprobadas, regulares, pendientes, promedio
+    FiltrosBar.tsx      — Búsqueda y filtros
+```
+
 ## Key Commands
 
 - `pnpm run typecheck` — full typecheck across all packages
